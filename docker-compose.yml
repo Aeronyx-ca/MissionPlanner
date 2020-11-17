@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  missionplanner:
+    image: ${DOCKER_REGISTRY-}missionplanner
+    build:
+      context: .
+      dockerfile: Dockerfile
